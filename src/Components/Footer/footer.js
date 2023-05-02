@@ -14,9 +14,11 @@ function Footer() {
           <NavLink>
             <span>Biz haqimizda</span>
           </NavLink>
-          <div className="logo">
+          <NavLink to={"/"}>
+              <div className="logo">
             <Logo />
-          </div>
+          </div> 
+          </NavLink>
 
           <NavLink>
             <span>Blogimiz</span>

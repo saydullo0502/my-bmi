@@ -7,11 +7,14 @@ function Navbar() {
     <div className="wrapper">
       <div className="container">
         <header>
-          <div className="logo">
+          <NavLink to={"/"}>
+              <div className="logo">
             <Logo />
-          </div>
+          </div> 
+          </NavLink>
+       
           <nav>
-            <NavLink>
+            <NavLink to={"/selectProduct"}>
               <span>Mahsulotlar</span>
             </NavLink>
             <NavLink>

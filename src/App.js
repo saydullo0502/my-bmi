@@ -4,6 +4,7 @@ import { Route, Routes } from "react-router-dom";
 import Navbar from "./Components/Navbar";
 import Home from "./Pages/Home";
 import Footer from "./Components/Footer/footer";
+import SelectProduct from "./Pages/SelectPage";
 
 function App() {
   return (
@@ -11,8 +12,9 @@ function App() {
       <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
+        <Route path="/selectProduct" element={<SelectProduct />} />
       </Routes>
-      <Footer/>
+      <Footer />
     </div>
   );
 }

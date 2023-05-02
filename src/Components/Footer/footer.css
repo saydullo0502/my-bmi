@@ -1,0 +1,47 @@
+.footer_full {
+    
+    background: #FFFFFF;
+    box-shadow: 0px -7px 80px rgba(189, 189, 189, 0.25);
+}
+
+.footer_link {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 3rem;
+}
+
+.footer_link span {
+    font-family: 'Lexend';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 178.19%;
+    color: #70737C;
+}
+
+.footer_full .hr {
+    width: 95%;
+    margin: 0 auto;
+    opacity: 0.3;
+    border: 1px solid #359740;
+    margin-top: 10px;
+}
+
+.footer_blog {
+    width: 95%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 19px;
+}
+
+.footer_blog p {
+    font-family: 'Lexend';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 178.19%;
+    color: #70737C;
+}

@@ -17,7 +17,7 @@ function Navbar() {
             <NavLink to={"/selectProduct"}>
               <span>Mahsulotlar</span>
             </NavLink>
-            <NavLink>
+            <NavLink to={"/productInformation"}>
               <span>Biz haqimizda</span>
             </NavLink>
             <NavLink>

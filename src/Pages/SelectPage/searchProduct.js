@@ -1,9 +1,15 @@
+import { Search } from "../../assets/svg";
 import "./selectProduct.css";
 
 function SearchProduct() {
   return (
     <div className="container">
-      <h1>Assalomu Alaykum</h1>
+      <div className="search_center">
+        <div className="search_center_inp">
+          <Search />
+          <input type="search" placeholder="Search" />
+        </div>
+      </div>
     </div>
   );
 }

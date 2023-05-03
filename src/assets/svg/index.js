@@ -131,3 +131,22 @@ export const StartHalp = (props) => (
     />
   </svg>
 )
+
+
+export const ArrowTop=(props) => (
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width={16}
+    height={10}
+    fill="none"
+    {...props}
+  >
+    <path
+      stroke="#929292"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      strokeWidth={1.5}
+      d="m1 8.5 7-7 7 7"
+    />
+  </svg>
+)

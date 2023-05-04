@@ -136,7 +136,7 @@
 }
 
 .brand_full button {
-    border: 2px solid #EFEFEF;
+    border: 2px outset #EFEFEF;
     border-radius: 8px;
     font-family: 'Lexend';
     font-style: normal;

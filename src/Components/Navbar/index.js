@@ -8,11 +8,11 @@ function Navbar() {
       <div className="container">
         <header>
           <NavLink to={"/"}>
-              <div className="logo">
-            <Logo />
-          </div> 
+            <div className="logo">
+              <Logo />
+            </div>
           </NavLink>
-       
+
           <nav>
             <NavLink to={"/selectProduct"}>
               <span>Mahsulotlar</span>

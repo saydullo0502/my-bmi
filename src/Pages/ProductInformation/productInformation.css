@@ -1,1 +1,312 @@
+.product_information_full {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 30px;
+    margin: 1.7rem 3rem;
+}
 
+.product_information_slider {
+    width: 420px;
+    height: 422px;
+    border: 2px outset #359740;
+    border-radius: 12px;
+    overflow: hidden;
+    padding: 10px;
+
+}
+
+.product_information_slider_img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.product_information_slider_img img {
+    width: 278px;
+    height: 360px;
+    user-select: none;
+    object-fit: scale-down;
+    /* max-width: 200px; */
+}
+
+
+.product_information_text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 25px;
+}
+
+.select_memory h4 {
+    margin-bottom: 10px;
+}
+
+.memory_months {
+    width: 183px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 5px;
+    padding: 3px;
+    background: rgba(53, 151, 64, 0.15);
+    border-radius: 10px;
+
+    border: 1px solid #EFEFEF;
+    border-radius: 12px;
+}
+
+
+.memory_month button {
+    border: none;
+    background: none;
+    border-radius: 8px;
+    padding: 4px;
+    font-family: 'Lexend';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 24px;
+    text-align: center;
+    color: #1F2533;
+    transition: all .2s;
+}
+
+
+.memory_month button:hover {
+    background: #2BB159;
+    color: #FFFFFF;
+}
+
+.memory_month button:focus {
+    background: #2BB159;
+    color: #FFFFFF;
+}
+
+
+.product_price_total {
+    width: 619px;
+    height: 212px;
+    padding: 20px;
+
+    border: 2px outset #EFEFEF;
+    box-shadow: 0px 4px 21px rgba(209, 209, 209, 0.25);
+    border-radius: 12px;
+}
+
+.price_total_one {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.price_total_one h2 {
+    font-family: 'Lexend';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 29.4566px;
+    line-height: 100%;
+    color: #1F2533;
+
+}
+
+.price_total_one p {
+    font-family: 'Lexend';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 17.183px;
+    line-height: 23px;
+    text-decoration-line: line-through;
+    color: #A5A5A5;
+}
+
+.price_total_button {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.price_total_button button {
+    font-family: 'Lexend';
+    border-radius: 6px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.35px;
+    color: #FFFFFF;
+    border: none;
+    padding: 11px 33px;
+    transition: all .3s linear;
+}
+
+.price_total_button button:nth-child(1) {
+    font-family: 'Lexend';
+    background: #2BB159;
+    color: #FFFFFF;
+}
+
+.price_total_button button:nth-child(2) {
+    font-family: 'Lexend';
+    background: #FFFFFF;
+    border: 1px solid rgba(53, 151, 64, 0.08);
+    color: #2BB159;
+}
+
+.price_total_button button:hover:nth-child(1) {
+    background: #FFFFFF;
+    border: 1px solid rgba(53, 151, 64, 0.08);
+    color: #2BB159;
+}
+
+.price_total_button button:hover:nth-child(2) {
+    background: #FFFFFF;
+    border: 1px solid rgba(53, 151, 64, 0.08);
+    color: #2BB159;
+    background: #2BB159;
+    color: #FFFFFF;
+}
+
+.payment_plan_full {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.payment_plan p {
+    font-family: 'Lexend';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 41px;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.4px;
+    color: #1F2533;
+}
+
+
+
+/* about */
+
+
+
+
+.pro_about .hr {
+    width: 100%;
+    margin: 0 auto;
+    opacity: 0.3;
+    border: 1px solid #359740;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.pro_about_tables_full {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+}
+
+.pro_about_table {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 521px;
+    height: 42px;
+    background: rgba(53, 151, 64, 0.08);
+    border-radius: 14px;
+    padding: 15px;
+    cursor: pointer;
+    transition: all .2s linear;
+}
+
+.pro_about_table:hover {
+    background: #4fa08438;
+    border-radius: 8px;
+
+}
+
+.pro_about_table h2 {
+    font-family: 'Lexend';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 240%;
+    color: #359740;
+}
+
+.pro_about_table p {
+    font-family: 'Lexend';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 240%;
+    color: #359740;
+}
+
+
+
+
+
+
+/* about */
+
+
+
+/* Related products */
+
+
+.customerReviews_star{
+    width: 350px;
+    height: 360px;
+    border: 1px solid #EFEFEF;
+    /* filter: drop-shadow(0px 4px 21px rgba(0, 0, 0, 0.25)); */
+    border-radius: 12px;
+    cursor: pointer;
+}
+
+
+.customerReviews_star_text {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    margin-top: 20px;
+}
+
+.star_text_svg{
+    margin: 0 24px;
+}
+.star_text_svg p{
+    font-family: 'Lexend';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 178.19%;
+    color: #70737C;
+}
+.star_text_svg svg{
+    width: 25px;
+    height: 35px;
+}
+
+.customerReviews_star .hr{
+    width: 90%;
+    margin: 0 auto;
+    opacity: 0.3;
+    border: 1px solid #EFEFEF;
+    margin-top: 10px;
+}
+
+.customerReviews_star img{
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+    margin: 20px 50px;
+    user-select: none;
+}

@@ -14,7 +14,8 @@ import ContactUs from "./Pages/ContactUs";
 function App() {
   return (
     <div className="App">
-      <Navbar />
+    <div>
+    <Navbar />
       <Toaster />
       <Routes>
         <Route path="/" element={<Home />} />
@@ -26,6 +27,7 @@ function App() {
         <Route path="/payment" element={<Payment />} />
         <Route path="/contactUs" element={<ContactUs />} />
       </Routes>
+      </div>
       <Footer />
     </div>
   );

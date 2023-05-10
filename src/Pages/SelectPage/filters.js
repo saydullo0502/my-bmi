@@ -19,24 +19,24 @@ function Filter() {
             </div>
 
             <div className="category_check_text">
-              <div className="category_checked">
+              <label className="category_checked">
                 <input type="checkbox" />
                 <p>Samsung (45)</p>
-              </div>
+              </label>
 
-              <div className="category_checked">
+              <label className="category_checked">
                 <input type="checkbox" />
                 <p>Apple (173)</p>
-              </div>
+              </label>
 
-              <div className="category_checked">
+              <label className="category_checked">
                 <input type="checkbox" />
                 <p>Xiaomi (478)</p>
-              </div>
-              <div className="category_checked">
+              </label>
+              <label className="category_checked">
                 <input type="checkbox" />
                 <p>Logitech (724)</p>
-              </div>
+              </label>
             </div>
           </div>
 
@@ -55,18 +55,18 @@ function Filter() {
               <p>Chegirma</p>
               <ArrowTop />
             </div>
-            <div className="discount_radio">
-              <input type="radio" />
+            <label className="discount_radio">
+              <input type="radio"  name="sale"/>
               <p>10% va undan yuqori</p>
-            </div>
-            <div className="discount_radio">
-              <input type="radio" />
+            </label>
+            <label className="discount_radio">
+              <input type="radio"  name="sale"/>
               <p>30% va undan yuqori</p>
-            </div>
-            <div className="discount_radio">
-              <input type="radio" />
+            </label>
+            <label className="discount_radio">
+              <input type="radio"  name="sale"/>
               <p>50% va undan yuqori</p>
-            </div>
+            </label>
           </div>
         </div>
 

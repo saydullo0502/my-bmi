@@ -45,7 +45,7 @@ function Navbar() {
             <NavLink>
               <span>Blogimiz</span>
             </NavLink>
-            <NavLink>
+            <NavLink to={"/contactUs"}>
               <span>Aloqalar</span>
             </NavLink>
           </nav>

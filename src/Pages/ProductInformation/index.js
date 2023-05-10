@@ -1,7 +1,7 @@
 import CustomerReviews from "./customerReviews";
 import ProductAbout from "./productAbout";
 import ProductInformationpage from "./productInformationpage";
-import Cart from "../../Components/Cart/CartFull";
+import Cart from "../../Components/cart/CartFull";
 import RelatedProducts from "./relatedProducts";
 
 function ProductInformation() {

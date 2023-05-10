@@ -1,6 +1,6 @@
 import { Star, StartHalp } from "../../assets/svg";
 
-import React, { useRef, useState } from "react";
+import React from "react";
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
 
@@ -35,22 +35,29 @@ function ProductInformationpage() {
               <div className="product_information_slider_img">
                 <img
                   src={require("../../assets/img/productInformation1.png")}
+                  alt="..."
                 />
               </div>
             </SwiperSlide>
             <SwiperSlide>
               <div className="product_information_slider_img">
-                <img src={require("../../assets/img/cartOneImg.png")} />
+                <img
+                  src={require("../../assets/img/cartOneImg.png")}
+                  alt="..."
+                />
               </div>
             </SwiperSlide>
             <SwiperSlide>
               <div className="product_information_slider_img">
-                <img src={require("../../assets/img/cartThreeImg.png")} />
+                <img
+                  src={require("../../assets/img/cartThreeImg.png")}
+                  alt="..."
+                />
               </div>
             </SwiperSlide>
             <SwiperSlide>
               <div className="product_information_slider_img">
-                <img src={require("../../assets/img/cart6img.png")} />
+                <img src={require("../../assets/img/cart6img.png")} alt="..." />
               </div>
             </SwiperSlide>
           </Swiper>

@@ -1,8 +1,8 @@
-import Cart from "../../Components/Cart/CartFull";
+import Cart from "../../Components/cart/CartFull";
 import Blog from "./blog";
 import Brand from "./brand";
 import Carusel from "./carusel";
-import Intro from "./Intro";
+import Intro from "./intro";
 
 
 function Home() {

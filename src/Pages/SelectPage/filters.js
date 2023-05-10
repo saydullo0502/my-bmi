@@ -1,5 +1,5 @@
 import { ArrowTop } from "../../assets/svg";
-import Cart from "../../Components/Cart/CartFull";
+import Cart from "../../Components/cart/CartFull";
 import "./selectProduct.css";
 
 function Filter() {

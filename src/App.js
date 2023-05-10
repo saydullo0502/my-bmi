@@ -1,6 +1,6 @@
-import logo from "./logo.svg";
 import "./App.css";
 import { Route, Routes } from "react-router-dom";
+import { Toaster } from "react-hot-toast";
 import Navbar from "./Components/Navbar";
 import Home from "./Pages/Home";
 import Footer from "./Components/Footer/footer";
@@ -15,15 +15,16 @@ function App() {
   return (
     <div className="App">
       <Navbar />
+      <Toaster />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/selectProduct" element={<SelectProduct />} />
         {/* <Route path="/productInformation" element={<ProductInformation />} /> */}
-        <Route path="/productInformation" element={<ProductInformation/>} />
-        <Route path="/yourCart" element={<YourCart/>}/>
-        <Route path="/checkout" element={<Checkout/>}/>
-        <Route path="/payment"   element={<Payment/>}/>
-        <Route path="/contactUs" element={<ContactUs/>}/>
+        <Route path="/productInformation" element={<ProductInformation />} />
+        <Route path="/yourCart" element={<YourCart />} />
+        <Route path="/checkout" element={<Checkout />} />
+        <Route path="/payment" element={<Payment />} />
+        <Route path="/contactUs" element={<ContactUs />} />
       </Routes>
       <Footer />
     </div>

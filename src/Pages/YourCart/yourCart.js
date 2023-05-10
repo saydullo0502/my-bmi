@@ -7,8 +7,8 @@ function YourCartPage() {
     <div className="container">
       <div className="yourCartPag_full">
         <div className="your_cart_page_text">
-          <h1>Your cart.</h1>
-          <p>2 items</p>
+          <h1>Sizning savatingiz.</h1>
+          <p>2 ta mahsulot</p>
         </div>
         <div className="hr_bot"></div>
 

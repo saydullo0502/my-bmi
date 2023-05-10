@@ -1,8 +1,30 @@
+import { useState, useEffect } from "react";
 import { NavLink } from "react-router-dom";
-import { Basketcart, Like, Logo, Search, Telegram } from "../../assets/svg";
+import {
+  Basketcart,
+  Eye,
+  Like,
+  Logo,
+  Search,
+  Telegram,
+} from "../../assets/svg";
 import "./navbar.css";
 
 function Navbar() {
+  const [isInverted, setInverted] = useState(false);
+
+  const toggleInverted = () => {
+    setInverted(!isInverted);
+  };
+  useEffect(() => {
+    const body = document.querySelector("body");
+    if (isInverted) {
+      body.classList.add("inverted");
+    } else {
+      body.classList.remove("inverted");
+    }
+  }, [isInverted]);
+
   return (
     <div className="wrapper">
       <div className="container">
@@ -28,6 +50,8 @@ function Navbar() {
             </NavLink>
           </nav>
           <div className="nav_search">
+            <Eye onClick={toggleInverted} />
+
             <Telegram />
             <div className="nav_search_inp">
               <Search />

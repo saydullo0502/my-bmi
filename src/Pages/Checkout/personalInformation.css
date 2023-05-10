@@ -1,0 +1,76 @@
+.personalInformation_inp {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 750px;
+    margin-top: 20px;
+}
+
+.personalInformation {
+    margin-top: 20px;
+}
+
+.person_address p {
+    font-family: 'Lexend';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 178.19%;
+    color: #70737C;
+}
+
+.person_address input {
+    border: 1px solid #EFEFEF;
+    border-radius: 4px;
+    width: 350px;
+    height: 56px;
+    padding: 0 10px;
+}
+
+.person_address_address p {
+    font-family: 'Lexend';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 178.19%;
+    color: #70737C;
+}
+
+
+.person_address_address input {
+    border: 1px solid #EFEFEF;
+    border-radius: 4px;
+    width: 350px;
+    height: 56px;
+    padding: 0 10px;
+}
+
+.person_address_address {
+    margin-top: 20px;
+}
+
+
+.person_address_address_button{
+    margin-top: 20px;
+    margin-bottom: 80px;
+}
+
+
+.person_address_address_button button {
+    border: none;
+    width: 160px;
+    height: 51px;
+    background: #359740;
+    border-radius: 8px;
+    font-family: 'Lexend';
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 178.19%;
+    letter-spacing: -0.035em;
+    color: #FFFFFF;
+}
+
+.person_address_address_button button:hover{
+    background: #359740;
+    background: #4FA083;
+}

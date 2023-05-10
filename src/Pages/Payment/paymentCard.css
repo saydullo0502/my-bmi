@@ -1,0 +1,151 @@
+.payment_full_card_pay{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 50px 0px 50px 0px
+}
+
+
+.paymeCard_full {
+    width: 445px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 15px;
+}
+
+.card_type {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 300px;
+}
+
+.card_type img {
+    border-radius: 4.03846px;
+    border: 1.34615px solid #EFEFEF;
+    width: 60px;
+    height: 40px;
+    object-fit: contain;
+    padding: 3px;
+    cursor: pointer;
+}
+
+.card_type img:hover {
+    border: 1.34615px solid #359740;
+    transition: all .2s linear;
+}
+
+.card_tape_full p {
+    font-family: 'Lexend';
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 178.19%;
+    color: #70737C;
+}
+
+.card_number p {
+    font-family: 'Lexend';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 178.19%;
+    color: #70737C;
+}
+
+.card_number input {
+    width: 446px;
+    height: 56px;
+    border: 1px solid #EFEFEF;
+    border-radius: 4px;
+    padding: 0 24px;
+}
+
+
+.expiry_date p {
+    font-family: 'Lexend';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 178.19%;
+    color: #70737C;
+}
+
+.expiry_date input {
+    width: 214px;
+    height: 56px;
+    border: 1px solid #EFEFEF;
+    border-radius: 4px;
+    padding: 0 50px;
+}
+
+.hr_card_payment {
+    width: 446px;
+    margin: 0 auto;
+    opacity: 0.5;
+    border: 1px solid #EFEFEF;
+    margin-top: 10px;
+}
+
+
+.total_amount {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.total_amount p {
+    font-family: 'Lexend';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 178.19%;
+    color: #70737C;
+}
+
+.total_amount span {
+    font-family: 'Lexend';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 25px;
+    letter-spacing: -0.04em;
+    color: #1F2533;
+}
+
+.payment_button_card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 447px;
+    height: 51px;
+    background: #359740;
+    border-radius: 8px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.payment_button_card:hover{
+    background: #4FA083;
+    transition: all .2s linear;
+}
+
+.payment_button_card p {
+    font-family: 'Lexend';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 178.19%;
+    letter-spacing: -0.035em;
+    color: #FFFFFF;
+}
+
+.payment_button_card span{
+    font-family: 'Lexend';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 178.19%;
+    letter-spacing: -0.035em;
+    color: #FFFFFF;
+}

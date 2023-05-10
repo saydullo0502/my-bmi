@@ -1,0 +1,234 @@
+.your_cart_page_text {
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.your_cart_page_text h1 {
+    font-family: 'Lexend';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 54px;
+    letter-spacing: -0.05em;
+    color: #1F2533;
+}
+
+.your_cart_page_text p {
+    font-family: 'Lexend';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 32px;
+    letter-spacing: -0.02em;
+    color: #70737C;
+}
+
+.hr_bot {
+    width: 70.5%;
+    opacity: 0.3;
+    border: 1px solid #EFEFEF;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.your_cart_full {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 27px;
+}
+
+.card_res_full {
+    width: 813px;
+    height: 119px;
+    border: 1px solid rgba(227, 227, 227, 0.7);
+    border-radius: 12px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px;
+}
+
+.card_full_img {
+    display: flex;
+}
+
+.card_res_full .card_p {
+    width: 252px;
+    font-family: 'Lexend';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 130%;
+    color: #1F2533;
+    margin: 0 10px;
+}
+
+.card_res_full p span {
+    color: #A5A5A5;
+}
+
+.score {
+    width: 104px;
+    height: 44px;
+    border: 1px solid #EFEFEF;
+    border-radius: 11px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    user-select: none;
+    padding: 5px;
+}
+
+.score span {
+    color: #359740;
+    font-size: 30px;
+}
+
+.score p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 32px;
+    height: 32px;
+    background: rgba(53, 151, 64, 0.08);
+    border-radius: 6px;
+    font-family: 'Lexend';
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 178.19%;
+    letter-spacing: -0.035em;
+    color: #359740;
+}
+
+.your_price span {
+    font-family: 'Lexend';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 25px;
+    letter-spacing: -0.04em;
+    color: #1F2533;
+}
+
+
+/* 
+.card_res_full span svg{
+    width: 20px;
+} */
+
+
+.your_cart_left {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.keep_shop button {
+    border: 1px solid #359740;
+    background-color: white;
+    border-radius: 8px;
+    padding: 11px 33px;
+    font-family: 'Lexend';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 178.19%;
+    letter-spacing: -0.035em;
+    color: #70737C;
+}
+
+.keep_shop button:hover {
+    box-shadow: 0 0 8px #A5A5A5;
+    transition: all .2s linear;
+}
+
+
+.your_cart_right {
+    width: 360px;
+    height: 410px;
+    border: 1px solid rgba(227, 227, 227, 0.7);
+    border-radius: 12px;
+    padding: 20px;
+
+
+}
+
+.your_cart_right_cost {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.your_cart_right_cost p {
+    font-family: 'Lexend';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 240%;
+    color: #000000;
+}
+
+.your_cart_right_cost span {
+    font-family: 'Lexend';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 25px;
+    letter-spacing: -0.04em;
+    color: #1F2533;
+}
+
+.your_hr {
+    width: 90%;
+    margin: 0 auto;
+    opacity: 0.3;
+    border: 1px solid #ECECEC;
+    margin-top: 10px;
+}
+
+.your_cart_right_button button {
+    border: none;
+    background: #359740;
+    border-radius: 6px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    letter-spacing: 0.35px;
+    color: #FFFFFF;
+    width: 316px;
+    height: 40px;
+}
+
+.your_cart_right_button button:hover {
+    background: #4FA083;
+}
+
+
+.your_cart_right_button_click button {
+    background: #FF961B;
+    border-radius: 6px;
+    border: none;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    letter-spacing: 0.35px;
+    color: #FFFFFF;
+    width: 316px;
+    height: 40px;
+}
+
+.your_cart_right_button_click button:hover{
+    background: #ff951bda;
+}

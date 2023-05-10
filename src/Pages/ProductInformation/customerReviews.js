@@ -29,7 +29,35 @@ function CustomerReviews() {
             <div className="hr"></div>
             <img src={require("../../assets/img/reviews_star.png")} alt="" />
           </div>
-          <div className="customerReviews_cart"></div>
+          <div className="customerReviews_cart">
+            <div className="customerReviews_cart_right">
+              <img
+                src={require("../../assets/img/caruselProfile.png")}
+                alt=""
+              />
+              <div className="cus_cart_profile">
+                <h2>Onlayn</h2>
+                <span>12.09.2023</span>
+              </div>
+              <div className="carusel_svg">
+                <Star />
+                <Star />
+                <Star />
+                <Star />
+                <StartHalp />
+              </div>
+            </div>
+            <p>
+              Model juda muvaffaqiyatli, chiroyli dizayn. Ekranning yuqori
+              qismidagi qalqib chiquvchi menyu old kameradan ikkita maydonga
+              bo'lingan
+            </p>
+            <div className="cus_cart_img">
+              <img src={require("../../assets/img/cusproImg1.png")} alt="" />
+              <img src={require("../../assets/img/cusproImgcart2.png")} alt="" />
+            </div>
+            <div className="hr"></div>
+          </div>
         </div>
       </div>
     </div>

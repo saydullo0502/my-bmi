@@ -1,4 +1,5 @@
-import { Basketcart, LikeTop, Star, StartHalp } from "../../assets/svg";
+import { NavLink } from "react-router-dom";
+import { Basketcart, LikeTop, Star, StartHalp } from "../../assets/svg";  
 import "./cart.css";
 
 function Cart() {
@@ -9,7 +10,9 @@ function Cart() {
           <div className="cart_like">
             <LikeTop />
           </div>
+          <NavLink to={"/yourCart"}>
           <img src={require("../../assets/img/cartOneImg.png")} alt="" />
+          </NavLink>
 
           <div className="cart_star">
             <Star />

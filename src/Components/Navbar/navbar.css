@@ -59,6 +59,7 @@ nav span:hover {
 .nav_search svg {
     align-items: center;
     margin: 0 10px;
+    cursor: pointer;
 }
 
 .nav_search_inp {

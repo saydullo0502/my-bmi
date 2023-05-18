@@ -1,8 +1,22 @@
-import { NavLink } from "react-router-dom";
-import { Basketcart, LikeTop, Star, StartHalp } from "../../assets/svg";  
+import { useNavigate, NavLink } from "react-router-dom";
+import { Basketcart, LikeTop, Star, StartHalp } from "../../assets/svg";
 import "./cart.css";
+import { useDispatch } from "react-redux";
+import { setProduct } from "../../redux/cart";
+import { useCart } from "../../redux/selectors";
+import { useMemo } from "react";
 
-function Cart() {
+function Cart({ item = { id: 8 } }) {
+  const navigate = useNavigate()
+  const dispatch = useDispatch();
+  const dataProducts = useCart();
+  const isBuyedProduct = useMemo(
+    () => dataProducts.find((product) => product?.id === item?.id),
+    [dataProducts]
+  );
+
+  console.log(isBuyedProduct);
+
   return (
     <div className="container">
       <div className="cart_full">
@@ -11,7 +25,7 @@ function Cart() {
             <LikeTop />
           </div>
           <NavLink to={"/yourCart"}>
-          <img src={require("../../assets/img/cartOneImg.png")} alt="" />
+            <img src={require("../../assets/img/cartOneImg.png")} alt="" />
           </NavLink>
 
           <div className="cart_star">
@@ -23,9 +37,16 @@ function Cart() {
             <p>(123)</p>
           </div>
           <h4>Apple iPhone 11 128GB,Slimbox</h4>
-          <div className="cart_basket">
+          <div
+            className="cart_basket"
+            onClick={() =>
+              isBuyedProduct
+                ? navigate("/yourCart")
+                : setProduct(item, dispatch, "+")
+            }
+          >
             <span>$12.56</span>
-            <Basketcart />
+            {isBuyedProduct ? "BUYED" : <Basketcart />}
           </div>
         </div>
 
@@ -167,12 +188,14 @@ function Cart() {
             <p>(123)</p>
           </div>
           <h4>Xiaomi Haylou Solar LS05</h4>
-          <div className="cart_basket">
+          <div
+            className="cart_basket"
+            onClick={() => setProduct(item, dispatch, "+")}
+          >
             <span>$12.56</span>
-            <Basketcart />
+            {isBuyedProduct ? "BUYED" : <Basketcart />}
           </div>
         </div>
-
       </div>
     </div>
   );

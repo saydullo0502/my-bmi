@@ -9,8 +9,10 @@ import {
   Telegram,
 } from "../../assets/svg";
 import "./navbar.css";
+import { useCart } from "../../redux/selectors";
 
 function Navbar() {
+  const dataCart = useCart();
   const [isInverted, setInverted] = useState(false);
 
   const toggleInverted = () => {
@@ -59,6 +61,7 @@ function Navbar() {
             </div>
             <Like />
             <Basketcart />
+            {dataCart?.length || ''}
           </div>
         </header>
       </div>

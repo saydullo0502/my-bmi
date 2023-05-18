@@ -1,20 +1,28 @@
 import { NavLink } from "react-router-dom";
+import { useDispatch } from "react-redux";
+import { setProduct } from "../../redux/cart";
+import { useCart } from "../../redux/selectors";
 import { Remove } from "../../assets/svg";
 import "./yourCart.css";
 
 function YourCartPage() {
+  const dispatch = useDispatch();
+  const dataCart = useCart();
+
   return (
     <div className="container">
       <div className="yourCartPag_full">
         <div className="your_cart_page_text">
           <h1>Sizning savatingiz.</h1>
-          <p>2 ta mahsulot</p>
+          <p>
+            {dataCart?.length ? `${dataCart?.length}ta mahsulot` : "Savatcha bo'sh"}
+          </p>
         </div>
         <div className="hr_bot"></div>
 
         <div className="your_cart_full">
           <div className="your_cart_left">
-            <div className="card_res_full">
+            {/* <div className="card_res_full">
               <div className="card_full_img">
                 <img src={require("../../assets/img/cardIphone2.png")} alt="" />
                 <p className="card_p">
@@ -25,9 +33,9 @@ function YourCartPage() {
               </div>
 
               <div className="score">
-                <span>-</span>
+                <span onClick={()=> setProduct(products[1],'-')}>-</span>
                 <p>2</p>
-                <span>+</span>
+                <span onClick={()=> setProduct(products[1],'+')}>+</span>
               </div>
               <div className="your_price">
                 <span>$24.56</span>
@@ -35,29 +43,40 @@ function YourCartPage() {
               <span>
                 <Remove />
               </span>
-            </div>
+            </div> */}
 
-            <div className="card_res_full">
-              <div className="card_full_img">
-                <img src={require("../../assets/img/cardRedmi1.png")} alt="" />
-                <p className="card_p">
-                  Smartfon Xiaomi Redmi 9 4/64GB (NFC), yashil <br />
-                  <span>ID: 12543645</span>
-                </p>
-              </div>
+            {dataCart.map((item) => {
+              return (
+                <div key={item.id} className="card_res_full">
+                  <div className="card_full_img">
+                    <img
+                      src={require("../../assets/img/cardRedmi1.png")}
+                      alt=""
+                    />
+                    <p className="card_p">
+                      Smartfon Xiaomi Redmi 9 4/64GB (NFC), yashil <br />
+                      <span>ID: 12543645</span>
+                    </p>
+                  </div>
 
-              <div className="score">
-                <span>-</span>
-                <p>1</p>
-                <span>+</span>
-              </div>
-              <div className="your_price">
-                <span>$12.56</span>
-              </div>
-              <span>
-                <Remove />
-              </span>
-            </div>
+                  <div className="score">
+                    <span onClick={() => setProduct(item, dispatch, "-")}>
+                      -
+                    </span>
+                    <p>{(item.count && item.count) || 1}</p>
+                    <span onClick={() => setProduct(item, dispatch, "+")}>
+                      +
+                    </span>
+                  </div>
+                  <div className="your_price">
+                    <span>$12.56</span>
+                  </div>
+                  <span onClick={() => setProduct(item, dispatch, "x")}>
+                    <Remove />
+                  </span>
+                </div>
+              );
+            })}
 
             <div className="keep_shop">
               <NavLink to={"/checkout"}>

@@ -47,7 +47,7 @@ function ContactUsPage() {
   };
 
   return (
-    <div className="container">
+    <div className="container" id="contact-us">
       <div className="contactUs_full">
         <div className="contact_us_text">
           <h1>Contact us</h1>
@@ -59,11 +59,11 @@ function ContactUsPage() {
           <div className="number_call_full">
             <div className="number_call">
               <Call />
-              <input type="tel" placeholder="+99 891 123 45 67" />
+              <input disabled type="tel" placeholder="+99 891 123 45 67" />
             </div>
             <div className="number_call">
               <Message />
-              <input type="email" placeholder="mail@gmail.com" />
+              <input disabled type="email" placeholder="mail@gmail.com" />
             </div>
           </div>
         </div>

@@ -10,8 +10,12 @@ function PaymentCard() {
           <div className="card_tape_full">
             <p>Karta turi</p>
             <div className="card_type">
-              <img src={require("../../assets/img/payme.png")} alt="" />
-              <img src={require("../../assets/img/click.png")} alt="" />
+              <a href="https://payme.uz/">
+                <img src={require("../../assets/img/payme.png")} alt="" />
+              </a>
+              <a href="https://click.uz">
+                <img src={require("../../assets/img/click.png")} alt="" />
+              </a>
               <img src={require("../../assets/img/visa.png")} alt="" />
             </div>
           </div>

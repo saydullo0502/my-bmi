@@ -44,7 +44,7 @@ function Navbar() {
             <NavLink to={"/productInformation"}>
               <span>Biz haqimizda</span>
             </NavLink>
-            <NavLink>
+            <NavLink to={"/"}>
               <span>Blogimiz</span>
             </NavLink>
             <NavLink to={"/contactUs"}>
@@ -61,7 +61,7 @@ function Navbar() {
             </div>
             <Like />
             <Basketcart />
-            {dataCart?.length || ''}
+            {dataCart?.length || ""}
           </div>
         </header>
       </div>
